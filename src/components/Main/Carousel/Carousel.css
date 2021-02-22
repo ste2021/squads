@@ -1,0 +1,113 @@
+.top {
+  border-top: 4px solid #960336;
+  width: 107px;
+  margin: 30px auto;
+}
+
+.Container {
+  padding: 0 60px;
+  margin: 130px 0 60px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .Container {
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .BrainhubCarousel {
+    margin: 0;
+    display: flex;
+    padding: 0;
+  }
+}
+
+.text {
+  color: #707070;
+  text-align: center;
+  font-size: 54px;
+  font-family: 'Poppins-Bold';
+  margin-bottom: 50px;
+}
+
+.BrainhubCarouselItem {
+  display: inherit;
+}
+
+.BrainhubCarousel__dots {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.BrainhubCarousel__dots .BrainhubCarousel__dot:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background: rgb(207, 99, 150);
+}
+
+.BrainhubCarousel__dot--selected:before {
+  background: #d8004c !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.BrainhubCarousel__dots .BrainhubCarousel__thumbnail {
+  padding: 10px;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.BrainhubCarousel__thumbnail[type='button'] {
+  -webkit-appearance: none;
+}
+
+.BrainhubCarousel__dots button {
+  background: none !important;
+}
+
+.BrainhubCarousel__arrows:hover:enabled span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  border-style: solid;
+  border-color: #fcfafa;
+  border-width: 3px 3px 0 0;
+  padding: 5px;
+  transition: 0.4s;
+  font-size: 0;
+}
+
+.BrainhubCarousel__arrowLeft {
+  margin-right: 20px;
+}
+
+.BrainhubCarousel__arrowRight {
+  margin-left: 20px;
+}
+
+.BrainhubCarousel__arrows {
+  border: none;
+  border-radius: 48%;
+  outline: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: #d8004c;
+}
+
+.BrainhubCarousel__arrows:hover:enabled {
+  background-color: #d8004c;
+}
